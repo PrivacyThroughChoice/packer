@@ -4,8 +4,8 @@
     "api_key": "59962951c19b193b50dc6d3f4d1f68ab",
     "client_id": "FtBuGP4uX2F777apxQclQ",
     "region_id": 5,
-    "droplet_name": "thunr-site",
-    "snapshot_name": "thunr-site",
+    "droplet_name": "ptc-site",
+    "snapshot_name": "ptc-site",
     "state_timeout": "20m"
   }],
   "provisioners": [{
@@ -14,9 +14,9 @@
   },{
     "type": "chef-solo",
     "cookbook_paths": ["cookbooks"],
-    "run_list": ["recipe[thunr_chef_role_site::default]"]
+    "run_list": ["recipe[chef_role_site::default]"]
   },{
     "type": "shell",
-    "inline": ["sudo -u thunr-rails bash -c 'cd /opt/thunr-rails/current; export RAILS_ENV=production; rake db:reset'"]
+    "inline": ["sudo -u ptc-rails bash -c 'cd /opt/ptc-rails/current; export RAILS_ENV=production; rake db:reset'"]
   }]
 }
