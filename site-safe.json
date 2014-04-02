@@ -1,8 +1,8 @@
 {
   "builders": [{
     "type": "digitalocean",
-    "api_key": "59962951c19b193b50dc6d3f4d1f68ab",
-    "client_id": "FtBuGP4uX2F777apxQclQ",
+    "api_key": "",
+    "client_id": "",
     "region_id": 5,
     "droplet_name": "ptc-site",
     "snapshot_name": "ptc-site",
