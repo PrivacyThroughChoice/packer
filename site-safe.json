@@ -15,8 +15,5 @@
     "type": "chef-solo",
     "cookbook_paths": ["cookbooks"],
     "run_list": ["recipe[chef_role_site::default]"]
-  },{
-    "type": "shell",
-    "inline": ["sudo -u ptc-rails bash -c 'cd /opt/ptc-rails/current; export RAILS_ENV=production; rake db:reset'"]
   }]
 }
